@@ -1,2 +1,3 @@
-# zdupcall-site
-Site ZdupCall - zdupcall.ro
+# ZdupCall
+
+Site-ul zdupcall.ro

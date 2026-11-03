@@ -13,6 +13,20 @@ body{margin:0;background:#F6F3EC}
 a{color:#0F6B3E}a:hover{color:#0B3D26}
 details summary{cursor:pointer;list-style:none}
 details summary::-webkit-details-marker{display:none}
+.mobile-bar{display:none}
+@media (max-width:640px){
+.nav-link{display:none!important}
+.cta{width:100%!important;justify-content:center!important}
+.hero-phone{max-width:300px!important;padding:22px 18px 26px!important;border-radius:30px!important}
+.mobile-bar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;justify-content:center;align-items:center;gap:8px;height:54px;border-radius:999px;background:#F2B544;color:#2A1A02!important;font-family:'Manrope',system-ui,sans-serif;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.45)}
+body{padding-bottom:78px}
+}
+@media (max-width:640px){
+.site-header{flex-wrap:nowrap!important}
+.site-header .hdr-btn{padding:10px 16px!important;font-size:14px!important}
+.mobile-bar{opacity:0;pointer-events:none;transform:translateY(12px);transition:opacity .25s,transform .25s}
+.mobile-bar.show{opacity:1;pointer-events:auto;transform:none}
+}
 </style>
 
 </head>
@@ -20,7 +34,7 @@ details summary::-webkit-details-marker{display:none}
 
 <div style="font-family: 'Manrope', system-ui, sans-serif; color: #13241B; background: #F6F3EC; min-height: 100vh">
 
-<header style="max-width: 1160px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<header class="site-header" style="max-width: 1160px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
 <a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #13241B">
 <span style="width: 40px; height: 40px; border-radius: 12px; background: #0F6B3E; display: flex; align-items: center; justify-content: center">
 <svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true"><path d="M30 31 H68 L32 69 H70" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"></path><rect x="12" y="23" width="26" height="16" rx="8" fill="#FFFFFF"></rect><rect x="62" y="61" width="26" height="16" rx="8" fill="#FFFFFF"></rect><path d="M76 20 A9 9 0 0 1 82 31" fill="none" stroke="#F2B544" stroke-width="4.5" stroke-linecap="round"></path><path d="M81 12 A17 17 0 0 1 91 32" fill="none" stroke="#F2B544" stroke-width="4.5" stroke-linecap="round"></path></svg>
@@ -28,10 +42,10 @@ details summary::-webkit-details-marker{display:none}
 <span style="font-weight: 800; font-size: 22px; letter-spacing: -0.02em">ZdupCall</span>
 </a>
 <nav aria-label="Navigare principala" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; font-weight: 600; font-size: 15px">
-<a href="#cum" style="text-decoration: none">Cum functioneaza</a>
-<a href="#preturi" style="text-decoration: none">Preturi</a>
-<a href="#intrebari" style="text-decoration: none">Intrebari</a>
-<a href="https://wa.me/40774020797" style="text-decoration: none; background: #0F6B3E; color: #FFFFFF; padding: 12px 20px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Vreau numarul meu</a>
+<a class="nav-link" href="#cum" style="text-decoration: none">Cum functioneaza</a>
+<a class="nav-link" href="#preturi" style="text-decoration: none">Preturi</a>
+<a class="nav-link" href="#intrebari" style="text-decoration: none">Intrebari</a>
+<a class="hdr-btn" href="https://wa.me/40774020797" style="text-decoration: none; background: #0F6B3E; color: #FFFFFF; padding: 12px 20px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Vreau numarul meu</a>
 </nav>
 </header>
 
@@ -45,16 +59,16 @@ details summary::-webkit-details-marker{display:none}
 <span style="font-size: 18px; font-weight: 600; color: #3F5248">sau 499,99 lei / an</span>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
-<a href="https://wa.me/40774020797" style="text-decoration: none; background: #F2B544; color: #2A1A02; font-weight: 800; font-size: 17px; padding: 16px 28px; border-radius: 999px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 10px">
+<a class="cta" href="https://wa.me/40774020797" style="text-decoration: none; background: #F2B544; color: #2A1A02; font-weight: 800; font-size: 17px; padding: 16px 28px; border-radius: 999px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 10px">
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.5A8.4 8.4 0 1 1 21 11.5z"></path></svg>
 Scrie-ne pe WhatsApp</a>
-<a href="#cum" style="text-decoration: none; border: 2px solid #0F6B3E; color: #0F6B3E; font-weight: 700; font-size: 17px; padding: 14px 26px; border-radius: 999px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center">Vezi cum functioneaza</a>
+<a class="cta" href="#cum" style="text-decoration: none; border: 2px solid #0F6B3E; color: #0F6B3E; font-weight: 700; font-size: 17px; padding: 14px 26px; border-radius: 999px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center">Vezi cum functioneaza</a>
 </div>
 <p style="margin: 0; font-size: 15px; color: #4E5F56">Fara card. Fara engleza. Te ajutam noi cu tot.</p>
 </div>
 
 <div style="flex: 1 1 340px; min-width: 0; display: flex; justify-content: center">
-<div style="width: 100%; max-width: 360px; background: #0B3D26; border-radius: 36px; padding: 28px 24px 32px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 20px; box-shadow: 0 30px 60px -24px rgba(14,34,56,0.45)">
+<div class="hero-phone" style="width: 100%; max-width: 360px; background: #0B3D26; border-radius: 36px; padding: 28px 24px 32px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 20px; box-shadow: 0 30px 60px -24px rgba(14,34,56,0.45)">
 <span style="font-size: 14px; font-weight: 600; color: #9FC9AF; letter-spacing: 0.04em; text-transform: uppercase">Apel primit · ZdupCall</span>
 <span style="width: 104px; height: 104px; border-radius: 50%; background: #145C3A; display: flex; align-items: center; justify-content: center">
 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#F2B544" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"></path></svg>
@@ -228,6 +242,7 @@ Scrie-ne pe WhatsApp</a>
 </div>
 </section>
 
+<a class="mobile-bar" href="https://wa.me/40774020797"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.5A8.4 8.4 0 1 1 21 11.5z"></path></svg>Scrie-ne pe WhatsApp</a>
 <footer style="max-width: 1160px; margin: 0 auto; padding: 32px 24px 48px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: #4E5F56">
 <span>© 2026 ZdupCall · zdupcall.ro · WhatsApp: <a href="https://wa.me/40774020797">0774 020 797</a> · <a href="https://wa.me/40799522533">0799 522 533</a></span>
 <span>MARIN I. ROBERT-LUCIAN I.I. · CUI 27006293 · F13/791/2010 · Constanta</span>
@@ -235,5 +250,8 @@ Scrie-ne pe WhatsApp</a>
 
 </div>
 
+<script>
+(function(){var b=document.querySelector('.mobile-bar');if(!b)return;function u(){if(window.scrollY>650)b.classList.add('show');else b.classList.remove('show');}window.addEventListener('scroll',u,{passive:true});u();})();
+</script>
 </body>
 </html>

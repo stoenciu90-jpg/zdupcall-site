@@ -14,6 +14,7 @@ a{color:#0F6B3E}a:hover{color:#0B3D26}
 details summary{cursor:pointer;list-style:none}
 details summary::-webkit-details-marker{display:none}
 .mobile-bar{display:none}
+#calculator b{white-space:nowrap}
 @media (max-width:640px){
 .nav-link{display:none!important}
 .cta{width:100%!important;justify-content:center!important}
@@ -43,6 +44,7 @@ body{padding-bottom:78px}
 </a>
 <nav aria-label="Navigare principala" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; font-weight: 600; font-size: 15px">
 <a class="nav-link" href="#cum" style="text-decoration: none">Cum functioneaza</a>
+<a class="nav-link" href="#calculator" style="text-decoration: none">Cat economisesti</a>
 <a class="nav-link" href="#preturi" style="text-decoration: none">Preturi</a>
 <a class="nav-link" href="#intrebari" style="text-decoration: none">Intrebari</a>
 <a class="nav-link" href="/descarca/" style="text-decoration: none">Descarca aplicatia</a>
@@ -110,6 +112,52 @@ Scrie-ne pe WhatsApp</a>
 </div>
 </section>
 
+<section id="calculator" style="max-width: 1160px; margin: 0 auto; padding: 88px 24px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 680px">
+<span style="align-self: flex-start; background: #FBE7BE; color: #6B4205; font-weight: 700; font-size: 14px; padding: 8px 14px; border-radius: 999px">Calculator de economie</span>
+<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-size: clamp(32px, 4vw, 44px); line-height: 1.1; color: #0B3D26">Cat economisesti pe luna?</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3F5248">Muta glisorul si vezi cati bani raman in familie cand cel drag te suna pe fix in loc de mobil.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 420px; min-width: 0; background: #FFFFFF; border-radius: 28px; padding: 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 26px">
+<label style="display: flex; flex-direction: column; gap: 12px">
+<span style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><span style="font-weight: 700; font-size: 17px; color: #0B3D26">Cat vorbiti pe zi</span><b id="calc-min-out" style="font-family: 'Fraunces', Georgia, serif; font-size: 30px; color: #0F6B3E">30 min</b></span>
+<input id="calc-min" type="range" min="5" max="90" step="5" value="30" style="width: 100%; accent-color: #0F6B3E; height: 32px">
+<span style="display: flex; justify-content: space-between; font-size: 13px; color: #4E5F56"><span>5 min</span><span>90 min (maximul zilnic)</span></span>
+</label>
+<label style="display: flex; flex-direction: column; gap: 12px">
+<span style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px"><span style="font-weight: 700; font-size: 17px; color: #0B3D26">Cate zile pe saptamana suna</span><b id="calc-zile-out" style="font-family: 'Fraunces', Georgia, serif; font-size: 30px; color: #0F6B3E">7 zile</b></span>
+<input id="calc-zile" type="range" min="1" max="7" step="1" value="7" style="width: 100%; accent-color: #0F6B3E; height: 32px">
+</label>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="font-weight: 700; font-size: 17px; color: #0B3D26">Abonamentul ales</span>
+<div id="calc-plan" style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" data-pret="41.67" class="calc-plan-btn" style="font: inherit; font-weight: 700; font-size: 15px; padding: 10px 16px; border-radius: 999px; border: 2px solid #0F6B3E; background: #0F6B3E; color: #FFFFFF; cursor: pointer; min-height: 44px">Anual · 41,67 lei/luna</button>
+<button type="button" data-pret="49.99" class="calc-plan-btn" style="font: inherit; font-weight: 700; font-size: 15px; padding: 10px 16px; border-radius: 999px; border: 2px solid #0F6B3E; background: #FFFFFF; color: #0F6B3E; cursor: pointer; min-height: 44px">Contract · 49,99</button>
+<button type="button" data-pret="59.99" class="calc-plan-btn" style="font: inherit; font-weight: 700; font-size: 15px; padding: 10px 16px; border-radius: 999px; border: 2px solid #0F6B3E; background: #FFFFFF; color: #0F6B3E; cursor: pointer; min-height: 44px">Fara contract · 59,99</button>
+</div>
+</div>
+<details style="background: #F6F3EC; border-radius: 18px; padding: 14px 18px">
+<summary style="font-weight: 700; font-size: 15px; color: #0F6B3E">Stii tarifele exacte de la penitenciarul lui? Modifica-le aici</summary>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px">
+<label style="flex: 1 1 140px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #3F5248">Spre mobil (lei/min)<input id="calc-tmob" type="number" min="0" step="0.01" inputmode="decimal" style="font: inherit; font-size: 17px; padding: 10px 12px; border-radius: 12px; border: 1px solid #D9D2C3"></label>
+<label style="flex: 1 1 140px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #3F5248">Spre fix (lei/min)<input id="calc-tfix" type="number" min="0" step="0.01" inputmode="decimal" style="font: inherit; font-size: 17px; padding: 10px 12px; border-radius: 12px; border: 1px solid #D9D2C3"></label>
+</div>
+</details>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; background: #0B3D26; color: #FFFFFF; border-radius: 28px; padding: 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; gap: 12px; padding-bottom: 14px; border-bottom: 1px solid #145C3A"><span style="color: #CDE6D6">Acum, apeluri pe mobil</span><b id="calc-mob" style="font-size: 20px; color: #F4B8A6; text-decoration: line-through">0 lei</b></div>
+<div style="display: flex; justify-content: space-between; gap: 12px"><span style="color: #CDE6D6">Cu ZdupCall, apeluri pe fix</span><b id="calc-fix" style="font-size: 20px">0 lei</b></div>
+<div style="display: flex; justify-content: space-between; gap: 12px; padding-bottom: 14px; border-bottom: 1px solid #145C3A"><span style="color: #CDE6D6">+ abonament ZdupCall</span><b id="calc-abo" style="font-size: 20px">41,67 lei</b></div>
+<span style="font-size: 15px; color: #9FC9AF; text-transform: uppercase; letter-spacing: 0.04em; font-weight: 700">Ramane in familie</span>
+<span style="font-family: 'Fraunces', Georgia, serif; font-size: clamp(48px, 7vw, 64px); font-weight: 700; color: #F2B544; line-height: 1"><span id="calc-eco">0</span><span style="font-family: 'Manrope', sans-serif; font-size: 20px; font-weight: 600; color: #CDE6D6"> lei / luna</span></span>
+<span id="calc-an" style="font-size: 18px; font-weight: 700; color: #FFFFFF">adica 0 lei pe an</span>
+<a href="https://wa.me/40774020797" style="text-decoration: none; background: #F2B544; color: #2A1A02; padding: 16px 24px; font-weight: 800; font-size: 17px; border-radius: 999px; min-height: 52px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; margin-top: auto">Vreau sa economisesc</a>
+</div>
+</div>
+<p style="margin: 0; font-size: 14px; line-height: 1.6; color: #4E5F56">Calcul orientativ, pornind de la 35 lei pentru 90 de minute spre mobil si 8 lei pentru 90 de minute spre fix. Tarifele difera de la un penitenciar la altul; daca le stii pe cele exacte, le poti modifica mai sus.</p>
+</section>
+
 <section id="cum" style="max-width: 1160px; margin: 0 auto; padding: 88px 24px 40px; display: flex; flex-direction: column; gap: 40px">
 <div style="display: flex; flex-direction: column; gap: 12px; max-width: 680px">
 <h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-size: clamp(32px, 4vw, 44px); line-height: 1.1; color: #0B3D26">Cum functioneaza</h2>
@@ -174,29 +222,20 @@ Scrie-ne pe WhatsApp</a>
 <div style="background: #FFFFFF; color: #0B3D26; border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px"><h3 style="margin: 0; font-size: 20px; color: #0B3D26">Fara contract</h3></div>
 <span style="font-family: 'Fraunces', Georgia, serif; font-size: 52px; font-weight: 700; color: #0B3D26; line-height: 1">59,99 lei<span style="font-family: 'Manrope', sans-serif; font-size: 18px; font-weight: 600; color: #3F5248"> / luna</span></span>
-<ul style="margin: 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.5; color: #3F5248"><li>Numar fix dedicat 021</li><li>Apeluri nelimitate in aplicatie</li><li>Platesti luna de luna</li><li>Renunti oricand</li></ul>
+<ul style="margin: 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.5; color: #3F5248"><li>Numar fix dedicat 021</li><li>Apeluri nelimitate in aplicatie</li><li>Platesti luna de luna</li><li>Renunti oricand</li><li><b>Doar 2 lei pe zi</b></li></ul>
 <a href="https://wa.me/40774020797" style="text-decoration: none; border: 2px solid #0F6B3E; color: #0F6B3E; padding: 14px 24px; font-weight: 800; font-size: 17px; border-radius: 999px; min-height: 52px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; margin-top: auto">Aleg fara contract</a>
 </div><div style="background: #FFFFFF; color: #0B3D26; border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px"><h3 style="margin: 0; font-size: 20px; color: #0B3D26">Contract 12 luni</h3><span style="background: #F2B544; color: #2A1A02; font-weight: 800; font-size: 14px; padding: 6px 12px; border-radius: 999px">Cel mai ales</span></div>
 <span style="font-family: 'Fraunces', Georgia, serif; font-size: 52px; font-weight: 700; color: #0B3D26; line-height: 1">49,99 lei<span style="font-family: 'Manrope', sans-serif; font-size: 18px; font-weight: 600; color: #3F5248"> / luna</span></span>
-<ul style="margin: 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.5; color: #3F5248"><li>Tot ce include varianta fara contract</li><li>Platesti lunar, 12 luni</li><li>Cu 10 lei mai putin pe luna</li><li>Pretul ramane fix tot anul</li></ul>
+<ul style="margin: 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.5; color: #3F5248"><li>Tot ce include varianta fara contract</li><li>Platesti lunar, 12 luni</li><li>Cu 10 lei mai putin pe luna</li><li>Pretul ramane fix tot anul</li><li><b>Doar 1,67 lei pe zi</b></li></ul>
 <a href="https://wa.me/40774020797" style="text-decoration: none; border: 2px solid #0F6B3E; color: #0F6B3E; padding: 14px 24px; font-weight: 800; font-size: 17px; border-radius: 999px; min-height: 52px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; margin-top: auto">Aleg contract lunar</a>
 </div><div style="background: #0F6B3E; color: #FFFFFF; border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px"><h3 style="margin: 0; font-size: 20px; color: #FFFFFF">Plata anuala</h3><span style="background: #F2B544; color: #2A1A02; font-weight: 800; font-size: 14px; padding: 6px 12px; border-radius: 999px">Cel mai avantajos</span></div>
 <span style="font-family: 'Fraunces', Georgia, serif; font-size: 52px; font-weight: 700; color: #FFFFFF; line-height: 1">499,99 lei<span style="font-family: 'Manrope', sans-serif; font-size: 18px; font-weight: 600; color: #CDE6D6"> / an</span></span>
-<ul style="margin: 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.5; color: #E3F1E8"><li>Contract 12 luni, platit o data</li><li>Iese 41,67 lei pe luna</li><li>Economisesti 220 lei fata de fara contract</li><li>Numarul ramane al tau tot anul</li></ul>
+<ul style="margin: 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.5; color: #E3F1E8"><li>Contract 12 luni, platit o data</li><li>Iese 41,67 lei pe luna</li><li>Economisesti 220 lei fata de fara contract</li><li>Numarul ramane al tau tot anul</li><li><b style="color: #F2B544">Doar 1,37 lei pe zi</b></li></ul>
 <a href="https://wa.me/40774020797" style="text-decoration: none; background: #F2B544; color: #2A1A02; padding: 16px 24px; font-weight: 800; font-size: 17px; border-radius: 999px; min-height: 52px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; margin-top: auto">Aleg anual</a>
 </div>
 </div>
-<div style="background: #FFFFFF; border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
-<h3 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-size: 28px; color: #0B3D26">Mai multe numere in familie</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3F5248">Pentru sotie si mama, pentru doi frati sau pentru doi detinuti in familie. Fiecare numar suna pe telefonul cui vrei, sau toate pe acelasi telefon.</p>
-<div style="background: #F6F3EC; border-radius: 20px; padding: 18px 20px; max-width: 520px; font-size: 16px">
-<div style="font-weight: 800; color: #0B3D26; margin-bottom: 6px">Cu plata anuala</div>
-<div style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid #E6E1D6"><span style="color: #4E5F56">Primul numar</span><b style="color: #3F5248">499,99 lei / an</b></div><div style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid #E6E1D6"><span style="color: #4E5F56">Al doilea numar</span><b style="color: #0F6B3E">399,99 lei / an</b></div><div style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid #E6E1D6"><span style="color: #4E5F56">Al treilea si urmatoarele</span><b style="color: #0F6B3E">299,99 lei / an</b></div></div>
-<p style="margin: 0; font-size: 14px; color: #4E5F56">Reducerea se aplica doar la plata anuala, cat timp primul numar este activ.</p>
-</div>
-
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px">
 <span style="font-weight: 700; font-size: 16px; color: #0B3D26; margin-right: 4px">Platesti cum vrei:</span>
 <span style="background: #FFFFFF; border-radius: 999px; padding: 8px 16px; font-size: 15px; font-weight: 600; color: #0F6B3E">Cash</span>
@@ -257,6 +296,25 @@ Scrie-ne pe WhatsApp</a>
 </div>
 
 <script>
+(function(){
+var TMOB=35/90, TFIX=8/90, ZILE_LUNA=365/12/7;
+var $=function(id){return document.getElementById(id)};
+var min=$('calc-min'),zile=$('calc-zile'),tmob=$('calc-tmob'),tfix=$('calc-tfix');if(!min)return;
+tmob.value=TMOB.toFixed(2);tfix.value=TFIX.toFixed(2);
+var pret=41.67,btns=document.querySelectorAll('.calc-plan-btn');
+function lei(x){return Math.round(x).toLocaleString('ro-RO')+' lei'}
+function calc(){
+var m=+min.value,z=+zile.value,zileLuna=z*ZILE_LUNA;
+var a=parseFloat(String(tmob.value).replace(',','.'))||0,b=parseFloat(String(tfix.value).replace(',','.'))||0;
+var cm=a*m*zileLuna,cf=b*m*zileLuna,eco=cm-cf-pret;
+$('calc-min-out').textContent=m+' min';$('calc-zile-out').textContent=z+(z==1?' zi':' zile');
+$('calc-mob').textContent=lei(cm);$('calc-fix').textContent=lei(cf);$('calc-abo').textContent=pret.toFixed(2).replace('.',',')+' lei';
+$('calc-eco').textContent=Math.max(0,Math.round(eco)).toLocaleString('ro-RO');
+$('calc-an').textContent=eco>0?'adica '+lei(eco*12)+' pe an':'la atat de putine minute abonamentul nu se scoate inca';
+}
+btns.forEach(function(btn){btn.addEventListener('click',function(){pret=+btn.dataset.pret;btns.forEach(function(x){var on=x===btn;x.style.background=on?'#0F6B3E':'#FFFFFF';x.style.color=on?'#FFFFFF':'#0F6B3E';});calc();});});
+[min,zile,tmob,tfix].forEach(function(el){el.addEventListener('input',calc)});calc();
+})();
 (function(){var b=document.querySelector('.mobile-bar');if(!b)return;function u(){if(window.scrollY>650)b.classList.add('show');else b.classList.remove('show');}window.addEventListener('scroll',u,{passive:true});u();})();
 </script>
 </body>

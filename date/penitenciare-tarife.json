@@ -1,0 +1,703 @@
+{
+  "sursa": "ANP, raspunsul nr. 500322/SC/18.11.2026, Anexa 1",
+  "actualizat": "2026-11-25",
+  "abonament": {
+    "luna": 49.99,
+    "an": 499.99
+  },
+  "nota": "Lei/minut cu TVA. fix = Retea fixa Romania (numarul ZdupCall), mobil = Retea mobila Romania. La doi operatori, calculul foloseste economia mai mica.",
+  "penitenciare": [
+    {
+      "id": "centrul-de-detentie-braila-tichilesti",
+      "nume": "Centrul de Detentie Braila-Tichilesti",
+      "operatori": [
+        {
+          "operator": "Paytel",
+          "fix": 0.19,
+          "mobil": 0.49
+        },
+        {
+          "operator": "BVFON",
+          "fix": 0.19,
+          "mobil": 0.58
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel",
+        "fix": 0.19,
+        "mobil": 0.49
+      }
+    },
+    {
+      "id": "centrul-de-detentie-craiova",
+      "nume": "Centrul de Detentie Craiova",
+      "operatori": [
+        {
+          "operator": "Paytel Vest",
+          "fix": 0.25,
+          "mobil": 0.49
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel Vest",
+        "fix": 0.25,
+        "mobil": 0.49
+      }
+    },
+    {
+      "id": "centrul-educativ-buzias",
+      "nume": "Centrul Educativ Buzias",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.19,
+          "mobil": 0.58
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.19,
+        "mobil": 0.58
+      }
+    },
+    {
+      "id": "centrul-educativ-targu-ocna",
+      "nume": "Centrul Educativ Targu Ocna",
+      "operatori": [
+        {
+          "operator": "Paytel",
+          "fix": 0.19,
+          "mobil": 0.49
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel",
+        "fix": 0.19,
+        "mobil": 0.49
+      }
+    },
+    {
+      "id": "aiud",
+      "nume": "Penitenciarul Aiud",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.08,
+          "mobil": 0.32
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.08,
+        "mobil": 0.32
+      }
+    },
+    {
+      "id": "bacau",
+      "nume": "Penitenciarul Bacau",
+      "operatori": [
+        {
+          "operator": "Paytel Vest",
+          "fix": 0.32,
+          "mobil": 0.52
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel Vest",
+        "fix": 0.32,
+        "mobil": 0.52
+      }
+    },
+    {
+      "id": "bistrita",
+      "nume": "Penitenciarul Bistrita",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.22,
+          "mobil": 0.51
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.22,
+        "mobil": 0.51
+      }
+    },
+    {
+      "id": "botosani",
+      "nume": "Penitenciarul Botosani",
+      "operatori": [
+        {
+          "operator": "Paytel Est",
+          "fix": 0.25,
+          "mobil": 0.49
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel Est",
+        "fix": 0.25,
+        "mobil": 0.49
+      }
+    },
+    {
+      "id": "bucuresti-rahova",
+      "nume": "Penitenciarul Bucuresti-Rahova",
+      "operatori": [
+        {
+          "operator": "Paytel",
+          "fix": 0.19,
+          "mobil": 0.49
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel",
+        "fix": 0.19,
+        "mobil": 0.49
+      }
+    },
+    {
+      "id": "codlea",
+      "nume": "Penitenciarul Codlea",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.19,
+          "mobil": 0.58
+        },
+        {
+          "operator": "Paytel",
+          "fix": 0.19,
+          "mobil": 0.49
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel",
+        "fix": 0.19,
+        "mobil": 0.49
+      }
+    },
+    {
+      "id": "craiova",
+      "nume": "Penitenciarul Craiova",
+      "operatori": [
+        {
+          "operator": "Paytel",
+          "fix": 0.15,
+          "mobil": 0.3
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel",
+        "fix": 0.15,
+        "mobil": 0.3
+      }
+    },
+    {
+      "id": "deva",
+      "nume": "Penitenciarul Deva",
+      "operatori": [
+        {
+          "operator": "Paytel",
+          "fix": 0.08,
+          "mobil": 0.33
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel",
+        "fix": 0.08,
+        "mobil": 0.33
+      }
+    },
+    {
+      "id": "drobeta-turnu-severin",
+      "nume": "Penitenciarul Drobeta Turnu Severin",
+      "operatori": [
+        {
+          "operator": "Paytel",
+          "fix": 0.17,
+          "mobil": 0.53
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel",
+        "fix": 0.17,
+        "mobil": 0.53
+      }
+    },
+    {
+      "id": "braila",
+      "nume": "Penitenciarul Braila",
+      "operatori": [
+        {
+          "operator": "Paytel",
+          "fix": 0.07,
+          "mobil": 0.29
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel",
+        "fix": 0.07,
+        "mobil": 0.29
+      }
+    },
+    {
+      "id": "bucuresti-jilava",
+      "nume": "Penitenciarul Bucuresti-Jilava",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.19,
+          "mobil": 0.58
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.19,
+        "mobil": 0.58
+      }
+    },
+    {
+      "id": "focsani",
+      "nume": "Penitenciarul Focsani",
+      "operatori": [
+        {
+          "operator": "Paytel Centru",
+          "fix": 0.25,
+          "mobil": 0.49
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel Centru",
+        "fix": 0.25,
+        "mobil": 0.49
+      }
+    },
+    {
+      "id": "galati",
+      "nume": "Penitenciarul Galati",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.19,
+          "mobil": 0.58
+        },
+        {
+          "operator": "Paytel",
+          "fix": 0.19,
+          "mobil": 0.49
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel",
+        "fix": 0.19,
+        "mobil": 0.49
+      }
+    },
+    {
+      "id": "gaesti",
+      "nume": "Penitenciarul Gaesti",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.34,
+          "mobil": 0.52
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.34,
+        "mobil": 0.52
+      }
+    },
+    {
+      "id": "gherla",
+      "nume": "Penitenciarul Gherla",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.18,
+          "mobil": 0.54
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.18,
+        "mobil": 0.54
+      }
+    },
+    {
+      "id": "giurgiu",
+      "nume": "Penitenciarul Giurgiu",
+      "operatori": [
+        {
+          "operator": "Paytel",
+          "fix": 0.15,
+          "mobil": 0.29
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel",
+        "fix": 0.15,
+        "mobil": 0.29
+      }
+    },
+    {
+      "id": "mioveni",
+      "nume": "Penitenciarul Mioveni",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.27,
+          "mobil": 0.55
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.27,
+        "mobil": 0.55
+      }
+    },
+    {
+      "id": "oradea",
+      "nume": "Penitenciarul Oradea",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.35,
+          "mobil": 0.57
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.35,
+        "mobil": 0.57
+      }
+    },
+    {
+      "id": "ploiesti",
+      "nume": "Penitenciarul Ploiesti",
+      "operatori": [
+        {
+          "operator": "Paytel Sud",
+          "fix": 0.25,
+          "mobil": 0.49
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel Sud",
+        "fix": 0.25,
+        "mobil": 0.49
+      }
+    },
+    {
+      "id": "satu-mare",
+      "nume": "Penitenciarul Satu Mare",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.35,
+          "mobil": 0.52
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.35,
+        "mobil": 0.52
+      }
+    },
+    {
+      "id": "slobozia",
+      "nume": "Penitenciarul Slobozia",
+      "operatori": [
+        {
+          "operator": "Paytel Sud",
+          "fix": 0.25,
+          "mobil": 0.49
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel Sud",
+        "fix": 0.25,
+        "mobil": 0.49
+      }
+    },
+    {
+      "id": "spital-bucuresti-jilava",
+      "nume": "Penitenciarul Spital Bucuresti-Jilava",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.33,
+          "mobil": 0.55
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.33,
+        "mobil": 0.55
+      }
+    },
+    {
+      "id": "spital-bucuresti-rahova",
+      "nume": "Penitenciarul Spital Bucuresti-Rahova",
+      "operatori": [
+        {
+          "operator": "Paytel",
+          "fix": 0.19,
+          "mobil": 0.49
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel",
+        "fix": 0.19,
+        "mobil": 0.49
+      }
+    },
+    {
+      "id": "spital-mioveni",
+      "nume": "Penitenciarul Spital Mioveni",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.38,
+          "mobil": 0.58
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.38,
+        "mobil": 0.58
+      }
+    },
+    {
+      "id": "spital-constanta-poarta-alba",
+      "nume": "Penitenciarul Spital Constanta-Poarta Alba",
+      "operatori": [
+        {
+          "operator": "Paytel Est",
+          "fix": 0.3,
+          "mobil": 0.58
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel Est",
+        "fix": 0.3,
+        "mobil": 0.58
+      }
+    },
+    {
+      "id": "spital-targu-ocna",
+      "nume": "Penitenciarul Spital Targu Ocna",
+      "operatori": [
+        {
+          "operator": "Paytel Vest",
+          "fix": 0.34,
+          "mobil": 0.54
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel Vest",
+        "fix": 0.34,
+        "mobil": 0.54
+      }
+    },
+    {
+      "id": "de-femei-ploiesti-targsorul-nou",
+      "nume": "Penitenciarul de Femei Ploiesti-Targsorul Nou",
+      "operatori": [
+        {
+          "operator": "Paytel",
+          "fix": 0.17,
+          "mobil": 0.49
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel",
+        "fix": 0.17,
+        "mobil": 0.49
+      }
+    },
+    {
+      "id": "targu-jiu",
+      "nume": "Penitenciarul Targu Jiu",
+      "operatori": [
+        {
+          "operator": "Paytel Vest",
+          "fix": 0.25,
+          "mobil": 0.49
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel Vest",
+        "fix": 0.25,
+        "mobil": 0.49
+      }
+    },
+    {
+      "id": "targu-mures",
+      "nume": "Penitenciarul Targu Mures",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.19,
+          "mobil": 0.58
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.19,
+        "mobil": 0.58
+      }
+    },
+    {
+      "id": "timisoara",
+      "nume": "Penitenciarul Timisoara",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.32,
+          "mobil": 0.52
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.32,
+        "mobil": 0.52
+      }
+    },
+    {
+      "id": "tulcea",
+      "nume": "Penitenciarul Tulcea",
+      "operatori": [
+        {
+          "operator": "Paytel",
+          "fix": 0.19,
+          "mobil": 0.49
+        },
+        {
+          "operator": "BVFON",
+          "fix": 0.19,
+          "mobil": 0.58
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel",
+        "fix": 0.19,
+        "mobil": 0.49
+      }
+    },
+    {
+      "id": "vaslui",
+      "nume": "Penitenciarul Vaslui",
+      "operatori": [
+        {
+          "operator": "Paytel",
+          "fix": 0.35,
+          "mobil": 0.58
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel",
+        "fix": 0.35,
+        "mobil": 0.58
+      }
+    },
+    {
+      "id": "miercurea-ciuc",
+      "nume": "Penitenciarul Miercurea Ciuc",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.08,
+          "mobil": 0.35
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.08,
+        "mobil": 0.35
+      }
+    },
+    {
+      "id": "margineni",
+      "nume": "Penitenciarul Margineni",
+      "operatori": [
+        {
+          "operator": "Paytel Vest",
+          "fix": 0.25,
+          "mobil": 0.49
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel Vest",
+        "fix": 0.25,
+        "mobil": 0.49
+      }
+    },
+    {
+      "id": "iasi",
+      "nume": "Penitenciarul Iasi",
+      "operatori": [
+        {
+          "operator": "Paytel",
+          "fix": 0.16,
+          "mobil": 0.45
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel",
+        "fix": 0.16,
+        "mobil": 0.45
+      }
+    },
+    {
+      "id": "baia-mare",
+      "nume": "Penitenciarul Baia Mare",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.28,
+          "mobil": 0.54
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.28,
+        "mobil": 0.54
+      }
+    },
+    {
+      "id": "constanta-poarta-alba",
+      "nume": "Penitenciarul Constanta-Poarta Alba",
+      "operatori": [
+        {
+          "operator": "Paytel Est",
+          "fix": 0.14,
+          "mobil": 0.38
+        }
+      ],
+      "calcul": {
+        "operator": "Paytel Est",
+        "fix": 0.14,
+        "mobil": 0.38
+      }
+    },
+    {
+      "id": "spital-dej",
+      "nume": "Penitenciarul Spital Dej",
+      "operatori": [
+        {
+          "operator": "BVFON",
+          "fix": 0.35,
+          "mobil": 0.57
+        }
+      ],
+      "calcul": {
+        "operator": "BVFON",
+        "fix": 0.35,
+        "mobil": 0.57
+      }
+    }
+  ]
+}
